@@ -564,8 +564,9 @@ h2 {
 
 .rules-layout {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
+  max-width: 920px;
 }
 
 .rule-section {
@@ -575,6 +576,27 @@ h2 {
 .rule-section p {
   margin: 0;
   color: var(--muted);
+}
+
+.rule-list {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0.65rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.rule-list ul {
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 0.4rem;
+  padding-left: 1.15rem;
+}
+
+.rule-note {
+  margin-top: 0.8rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(217, 180, 95, 0.2);
 }
 
 .term-list {
